@@ -1,7 +1,12 @@
 defmodule Cards do
 
   def create_deck do
-    ["Ace", "One", "Two", "Three", "Five", "Six"]
+    numbers = ["Ace", "Two", "Three", "Four", "Five", "Six"]
+    suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
+
+    for suit <- suits do
+      suit
+    end
   end
 
   def shuffle(deck) do
