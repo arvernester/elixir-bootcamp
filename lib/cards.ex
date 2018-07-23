@@ -4,8 +4,8 @@ defmodule Cards do
     numbers = ["Ace", "Two", "Three", "Four", "Five", "Six"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
 
-    for suit <- suits do
-      suit
+    for suit <- suits, number <- numbers do
+      "#{number} of #{suit}"
     end
   end
 
