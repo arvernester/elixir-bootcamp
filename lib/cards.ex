@@ -6,7 +6,7 @@ defmodule Cards do
 
     for suit <- suits, number <- numbers do
       "#{number} of #{suit}"
-    end
+    end    
   end
 
   def shuffle(deck) do
@@ -15,6 +15,10 @@ defmodule Cards do
 
   def contains?(deck, card \\ nil) do
     Enum.member? deck, card
+  end
+
+  def deal(deck, hand_size \\ 2) do
+    Enum.split deck, hand_size
   end
 
 end
